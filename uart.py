@@ -73,7 +73,7 @@ def main():
         kernel.build()
 
     if args.rpi3:
-        kernel.upload(device="/dev/tty.usbserial-0001")
+        kernel.upload(device="/dev/ttyUSB0")
     if args.qemu is not None:
         kernel.upload(device=args.qemu)
 
